@@ -50,14 +50,14 @@ public abstract class AbstractWorker {
 		return servletContext.get();
 	}
 
-	void setRequest(HttpServletRequest request) {
+	public void setRequest(HttpServletRequest request) {
 		this.request.set(request);
 	}
 
-	void setResponse(HttpServletResponse response) {
+	public void setResponse(HttpServletResponse response) {
 		this.response.set(response);
 	}
-	
+
 	void setServletContext(ServletContext servletContext) {
 		this.servletContext.set(servletContext);
 	}
